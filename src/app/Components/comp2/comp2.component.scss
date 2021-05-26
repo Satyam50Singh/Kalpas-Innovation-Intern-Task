@@ -1,0 +1,22 @@
+.news-summary{
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; 
+    font-size: medium;
+}
+
+.news-title{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    font-size: smaller;}
+
+.news-date{
+    color: grey; 
+    text-align: center; 
+    font-size: medium !important;
+}

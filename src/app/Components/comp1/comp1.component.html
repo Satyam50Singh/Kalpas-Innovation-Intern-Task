@@ -1,0 +1,20 @@
+<div class="row" style="background-color: #aaa; width: 100% !important; padding: 10px;">
+    <div *ngFor="let news of newsData" class="row" style="justify-content: space-between !important;">
+        <div class="col-10 col-md-11 news">
+            <div class="row">
+                <div class="col-2 col-md-1" style="justify-content: center;">
+                    <img src="assets/img/news-custom-image.jpg" class="img-fluid" style="border-radius: 50%; width: 65px;"
+                    alt="news-custom-image">
+                </div>
+                <div class="col col-md-10">
+                    <h6 class="news-summary">{{news.summary}}</h6>
+                    <h6 class="news-title">{{news.title}}</h6>
+                    <h6 style="font-size: smaller; color: grey;">{{news.published}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md delete-btn-div">
+            <span class="remove-news fa fa-close" (click)="deleteNews(newsData.indexOf(news))"></span>
+        </div>
+    </div>
+</div>

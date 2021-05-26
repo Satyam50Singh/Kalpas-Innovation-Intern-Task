@@ -1,0 +1,37 @@
+<div class="row" style="background-color: lightgrey;">
+    <div class="col-12 col-md-3 p-4" style="border-right: 1px solid grey; position: fixed relative;">
+        <div style="background-color:white; 
+        display: flex; padding: 10px 18px; margin: 16px;">
+            <div>
+                <img src="assets/img/reader-demo.png" style="border-radius: 50%; width: 60px;" alt="Reader-image">
+            </div>
+            <div style="justify-content: left; padding-left: 5px; text-align: left;">
+                <h5>Hi Reader,</h5>
+                <h6>Here's your News</h6>
+            </div>
+        </div>
+        <div class="toggle-bar" style="background-color:white; text-align: center; padding: 10px 18px; margin: 16px; ">
+            <h5 style="margin-bottom: 16px;">View Toggle</h5>
+            <div class="btn-group">
+                <button class="btn" style="background-color: lightgrey; color: grey;" routerLink="/comp2">
+                    <span class="fa fa-lg fa-id-card"></span>
+                </button>
+                <button class="btn button-active" style="background-color: lightgreen;" routerLink="comp1">
+                    <span class="fa fa-lg fa-list-ul"></span>
+                </button>
+            </div>
+        </div>
+        <div class="feedback-nav-item"
+            style="background-color:white; text-align: center; padding: 10px 18px; margin: 16px; ">
+            <h5 style="margin-bottom: 16px;">Have a Feedback?</h5>
+            <div class="btn-group">
+                <button class="btn" style="background-color: lightgreen;" (click)="OpenDialogBox()">
+                    <h6>We're Listening!</h6>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col col-md">
+        <router-outlet></router-outlet>
+    </div>
+</div>

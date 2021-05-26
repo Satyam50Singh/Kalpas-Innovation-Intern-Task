@@ -1,0 +1,17 @@
+<div class="row p-2">
+    <div class="col-12 col-md-4" *ngFor="let news of newsData" style="padding: 10px 18px 10px 10px;">
+        <div class="card">
+            <h6 class="mr-auto" style="text-align: right; padding: 4px;"><span class="fa fa-close fa-lg"
+                    (click)="deleteNews(newsData.indexOf(news))" style="color: red;"></span></h6>
+            <div class="p-3 pb-0 pt-0">
+                <h6 class="mb-2 news-summary">{{news.summary}}</h6>
+                <h6 class="news-title">{{news.title}}</h6>
+                <h6 class="news-date">{{news.published}}</h6>
+            </div>
+            <div class="p-3 pt-0">
+                <img src="assets/img/news-custom-image.jpg" width="100%" class="img-fluid" style="height: 200px;"
+                    alt="news-custom-image">
+            </div>
+        </div>
+    </div>
+</div>

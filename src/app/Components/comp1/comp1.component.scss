@@ -1,0 +1,38 @@
+.news{
+    padding: 0.7rem; 
+    background-color: white; 
+    border-radius: 7px; 
+    margin: 10px 0px 10px 5px !important;
+}
+
+.news-summary {
+    overflow: hidden; 
+    display: -webkit-box;
+    font-weight: bold;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.news-title {
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; 
+    font-size: small;
+}
+
+.remove-news{
+    color: red !important; 
+    background-color: honeydew; 
+    border-radius: 50%; 
+    padding: 5px;
+}
+
+.delete-btn-div {
+    justify-content: center; 
+    display: flex; 
+    text-align: center; 
+    margin: auto;
+}
