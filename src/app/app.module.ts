@@ -12,6 +12,7 @@ import { NewsService } from './Services/news.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import 'hammerjs';
+import { CompForModalComponent } from './Components/comp-for-modal/comp-for-modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import 'hammerjs';
     SidenavComponent,
     Comp1Component,
     Comp2Component,
-    FormCompComponent
+    FormCompComponent,
+    CompForModalComponent
   ],
   imports: [
     HttpClientModule,
